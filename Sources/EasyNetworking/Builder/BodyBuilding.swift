@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol BodyBuilder {
+public protocol BodyBuilding {
     func build() -> ForBody?
 }
 
-public class DefaultBodyBuilder: BodyBuilder {
+public class EmptyBodyBuilder: BodyBuilding {
     public func build() -> ForBody? {
         return nil
     }

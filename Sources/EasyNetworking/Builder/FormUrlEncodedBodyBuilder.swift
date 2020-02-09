@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class FormUrlEncodedBodyBuilder: BodyBuilder {
+public class FormUrlEncodedBodyBuilder: BodyBuilding {
     public let parameters: JSONDictionary
     
     public init(parameters: JSONDictionary) {
@@ -16,7 +16,7 @@ public class FormUrlEncodedBodyBuilder: BodyBuilder {
     }
     
     public func build() -> ForBody? {
-        let queryBuilder = DefaultQueryBuilder(parameters: parameters)
+        let queryBuilder = QueryBuilder(parameters: parameters)
         let queryItems = queryBuilder.build()
         let query = queryBuilder.build(queryItems: queryItems)
         

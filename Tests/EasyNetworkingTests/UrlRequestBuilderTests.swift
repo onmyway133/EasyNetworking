@@ -31,7 +31,7 @@ class UrlRequestBuilderTests: XCTestCase {
     }
     
     func testQuery() throws {
-        let builder = DefaultQueryBuilder(parameters: parameters)
+        let builder = QueryBuilder(parameters: parameters)
         let queryItems = builder.build()
         let query = builder.build(queryItems: queryItems)
         
@@ -61,7 +61,7 @@ class UrlRequestBuilderTests: XCTestCase {
         var options = Options()
         options.httpMethod = .patch
         options.path = "search"
-        options.queryBuilder = DefaultQueryBuilder(parameters: [
+        options.queryBuilder = QueryBuilder(parameters: [
             "q": "pokemon",
             "size": "10"
         ])

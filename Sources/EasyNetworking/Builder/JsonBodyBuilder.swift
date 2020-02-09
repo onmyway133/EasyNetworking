@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class JsonBodyBuilder: BodyBuilder {
+public class JsonBodyBuilder: BodyBuilding {
     public let parameters: JSONDictionary
     
     public init(parameters: JSONDictionary) {

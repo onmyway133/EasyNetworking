@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class MultipartFormBodyBuilder: BodyBuilder {
+public class MultipartFormBodyBuilder: BodyBuilding {
     public let parameters: JSONDictionary
     public let boundary: String
     
@@ -31,7 +31,7 @@ public class MultipartFormBodyBuilder: BodyBuilder {
     
     public func string(parameters: JSONDictionary) -> String {
         var string = ""
-        let queryBuilder = DefaultQueryBuilder(parameters: parameters)
+        let queryBuilder = QueryBuilder(parameters: parameters)
         let queryItems = queryBuilder.build()
         queryItems.forEach({ item in
             guard let value = item.value else {

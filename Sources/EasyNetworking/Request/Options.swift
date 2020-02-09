@@ -10,8 +10,8 @@ import Foundation
 
 public struct Options {
     public var path: String = ""
-    public var queryBuilder: QueryBuilder = DefaultQueryBuilder()
-    public var bodyBuilder: BodyBuilder = DefaultBodyBuilder()
+    public var queryBuilder: QueryBuilding = QueryBuilder()
+    public var bodyBuilder: BodyBuilding = EmptyBodyBuilder()
     public var headers: [String: String] = [:]
     public var httpMethod: HttpMethod = .get
     public var cachePolicy: URLRequest.CachePolicy = .useProtocolCachePolicy

@@ -8,11 +8,11 @@
 
 import Foundation
 
-public protocol QueryBuilder {
+public protocol QueryBuilding {
     func build() -> [URLQueryItem]
 }
 
-public class DefaultQueryBuilder: QueryBuilder {
+public class QueryBuilder: QueryBuilding {
     public let parameters: JSONDictionary
 
     public init(parameters: JSONDictionary = [:]) {

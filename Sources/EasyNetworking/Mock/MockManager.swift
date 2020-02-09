@@ -10,6 +10,10 @@ import Foundation
 
 public class MockManager {
     public var mocks = [Mock]()
+
+    public func register(_ mock: Mock) {
+        mocks.append(mock)
+    }
     
     public func findMock(request: URLRequest) -> Mock? {
         guard let url = request.url else {
