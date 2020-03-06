@@ -1,5 +1,14 @@
 ## EasyNetworking
 
+❤️ Support my app ❤️ 
+
+- [Push Hero - pure Swift native macOS application to test push notifications](https://www.producthunt.com/posts/push-hero-2)
+- [Quick Access - Organise files in the Mac menu bar](https://www.producthunt.com/posts/quick-access)
+- [Frame recorder - Recorder gif and video with frame](https://www.producthunt.com/posts/frame-recorder)
+- [Other apps](https://onmyway133.github.io/projects/)
+
+❤️❤️😇😍🤘❤️❤️
+
 ## Description
 
 Since iOS 7+, there is `URLSession` and it is great, no need for any wrappers. What I need in a networking library is some convenient helpers to make `URLRequest` and to chain request in a type safe way. That's why I build `EasyNetworking`.
